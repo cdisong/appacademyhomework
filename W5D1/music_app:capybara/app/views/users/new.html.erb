@@ -1,0 +1,14 @@
+<h1>create new human</h1>
+<!-- url _users/new brought us here, here: writing the page that submitts the inputted information to create  -->
+<form action=" <%= users_url %> " method="post">
+  <label for="email">EMAILHERE</label>
+  <input id="email" type="text" name="user[email]">
+  <label for="password">PASSCODEHERE</label>
+  <input id="password" type="password" name="user[password]">
+
+
+  <input type="submit" value="CREATE UZA">
+
+
+  <a href=" <%= new_session_url %> ">CLICK HERE IF YOU'RE ALREADY HERE</a>
+</form>
