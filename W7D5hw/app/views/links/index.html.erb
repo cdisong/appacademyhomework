@@ -1,0 +1,7 @@
+<% if logged_in? %>
+  <%= link_to 'New Link', new_link_url %>
+<% end %>
+
+<% @links.each do |link| %>
+<%= link_to link.title, link_url(link) %>
+<% end %>
